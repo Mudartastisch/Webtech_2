@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+    p {
+        font-weight: bold;
+    }
+
+    form {
+        padding: 5px 5px 5px 15px;
+        margin: 20px;
+    }
+
+    input {
+        width: 30%;
+    }
+
+    .button {
+        width: 15%
+    }
+    </style>
+    <h3>Prüfungsanmeldung "Web-Technologie" (Stein) SS 2018</h3>
+    <p>Termin: Mitte Juli, Einzelheiten werden hier bekanntgegeben</p>
+    <form action="/action_page.php">
+        Vorname:
+        <br>
+        <input type="text" name="firstname" placeholder="Max">
+        <br>
+        <br> Nachname:
+        <br>
+        <input type="text" name="lastname" placeholder="Mustermann">
+        <br>
+        <br> Matrikelnummer:
+        <br>
+        <input type="number" name="mtr" placeholder="999999" maxlength="6" pattern="[0-]{6}">
+        <br>
+        <br> Studiengang:
+        <br>
+        <select name="course">
+            <option value="computer-science">Medieninformatik</option>
+            <option value="media-science">Medienwissenschaft</option>
+            <option value="media-management">Medienmanagement</option>
+        </select>
+        <br>
+        <br> Fachsemester:
+        <br>
+        <input type="number" name="semester" placeholder="3">
+        <br>
+        <br> Email:
+        <br>
+        <input type="email" name="mail" placeholder="max.mustermann@uni-weimar.de" pattern=".+@uni-weimar.de" title="Nur @uni-weimar.de">
+        <br>
+        <br>
+        <input type="reset" class="button">
+        <input type="submit" class="button">
+    </form>
+</body>
+
+</html>
