@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 2px 7px;
+}
+
+a:hover {
+    background-color: #FF3300;
+}
