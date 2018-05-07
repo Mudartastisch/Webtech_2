@@ -6,22 +6,28 @@
     p {
         font-weight: bold;
     }
-
     form {
         padding: 5px 5px 5px 15px;
         margin: 20px;
     }
-
     input {
-        width: 30%;
+        width: 280px;
+		margin-top: 3px;
     }
-
+	select {
+		margin-top: 5px;
+		padding: 3px 0;
+	}
     .button {
-        width: 15%
+        width: 130px;
+		padding: 3px 0;
     }
+	.button[type=reset] {
+		margin-right: 20px;
+	}
     </style>
     <h3>Prüfungsanmeldung "Web-Technologie" (Stein) SS 2018</h3>
-    <p>Termin: Mitte Juli, Einzelheiten werden hier bekanntgegeben</p>
+    <p>Termin: Mitte Juli, Einzelheiten werden <a href="https://www.uni-weimar.de/de/medien/professuren/medieninformatik/webis/teaching/ss-2018/web-technology/" target="_blank">hier</a> bekanntgegeben.</p>
     <form action="/action_page.php">
         Vorname:
         <br>
@@ -52,8 +58,8 @@
         <input type="email" name="mail" placeholder="max.mustermann@uni-weimar.de" pattern=".+@uni-weimar.de" title="Nur @uni-weimar.de">
         <br>
         <br>
-        <input type="reset" class="button">
-        <input type="submit" class="button">
+        <input type="reset" value="Zurücksetzen" class="button">
+        <input type="submit" value="Abschicken" class="button">
     </form>
 </body>
 
